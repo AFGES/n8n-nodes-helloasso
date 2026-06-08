@@ -9,9 +9,7 @@ export class HelloassoOAuth2Api implements ICredentialType {
 
 	icon = { light: 'file:helloasso.svg', dark: 'file:helloasso.dark.svg' } as const;
 
-	// Link to your community node's README
-	documentationUrl =
-		'https://github.com/org/@afges/n8n-nodes-helloasso?tab=readme-ov-file#credentials';
+	documentationUrl = 'https://dev.helloasso.com/docs/getting-started';
 
 	properties: INodeProperties[] = [
 		{
@@ -24,19 +22,13 @@ export class HelloassoOAuth2Api implements ICredentialType {
 			displayName: 'Access Token URL',
 			name: 'accessTokenUrl',
 			type: 'hidden',
-			default: 'https://api.example.com/oauth/token',
+			default: 'https://api.helloasso.com/oauth2/token',
 		},
 		{
 			displayName: 'Auth URI Query Parameters',
 			name: 'authQueryParameters',
 			type: 'hidden',
 			default: '',
-		},
-		{
-			displayName: 'Scope',
-			name: 'scope',
-			type: 'hidden',
-			default: 'users:read users:write companies:read',
 		},
 		{
 			displayName: 'Authentication',
