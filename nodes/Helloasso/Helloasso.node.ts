@@ -1,6 +1,10 @@
 import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
-import { userDescription } from './resources/user';
-import { companyDescription } from './resources/company';
+import { organizationDescription } from './resources/organization';
+import { formDescription } from './resources/form';
+import { orderDescription } from './resources/order';
+import { paymentDescription } from './resources/payment';
+import { itemDescription } from './resources/item';
+import { checkoutIntentDescription } from './resources/checkoutIntent';
 
 export class Helloasso implements INodeType {
 	description: INodeTypeDescription = {
@@ -33,18 +37,38 @@ export class Helloasso implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						name: 'Company',
-						value: 'company',
+						name: 'Checkout Intent',
+						value: 'checkoutIntent',
 					},
 					{
-						name: 'User',
-						value: 'user',
+						name: 'Form',
+						value: 'form',
+					},
+					{
+						name: 'Item',
+						value: 'item',
+					},
+					{
+						name: 'Order',
+						value: 'order',
+					},
+					{
+						name: 'Organization',
+						value: 'organization',
+					},
+					{
+						name: 'Payment',
+						value: 'payment',
 					},
 				],
-				default: 'user',
+				default: 'organization',
 			},
-			...userDescription,
-			...companyDescription,
+			...organizationDescription,
+			...formDescription,
+			...orderDescription,
+			...paymentDescription,
+			...itemDescription,
+			...checkoutIntentDescription,
 		],
 	};
 }
