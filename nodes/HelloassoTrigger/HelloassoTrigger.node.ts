@@ -54,7 +54,7 @@ export class HelloassoTrigger implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'HelloAsso Trigger',
 		name: 'helloassoTrigger',
-		icon: { light: 'file:../Helloasso/helloasso.svg', dark: 'file:../Helloasso/helloasso.dark.svg' },
+		icon: 'file:../Helloasso/helloasso.svg',
 		group: ['trigger'],
 		version: 1,
 		subtitle: '={{$parameter["scope"]}}',
