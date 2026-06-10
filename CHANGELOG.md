@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.4
+
+- Add a **HelloAsso Trigger** node that auto-registers an n8n webhook URL with the
+  HelloAsso notification API (global or per-organization scope), subscribes to the
+  selected event types (Order, Payment, Form, Organization), verifies the
+  `x-ha-signature` HMAC, and removes the registration when the workflow is
+  deactivated.
+
 ## 0.0.3
 
 - Replace the placeholder `user`/`company` resources with real HelloAsso v5
