@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/AFGES/n8n-nodes-helloasso.git"
+		"url": "git+https://github.com/AFGES/n8n-nodes-helloasso.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
