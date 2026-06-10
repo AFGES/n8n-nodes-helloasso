@@ -1,6 +1,6 @@
 {
 	"name": "@afges/n8n-nodes-helloasso",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A node for building integrations with the Helloasso API in n8n.",
 	"license": "MIT",
 	"homepage": "",
@@ -34,8 +34,7 @@
 			"dist/credentials/HelloassoOAuth2Api.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/Helloasso/Helloasso.node.js",
-			"dist/nodes/HelloassoTrigger/HelloassoTrigger.node.js"
+			"dist/nodes/Helloasso/Helloasso.node.js"
 		]
 	},
 	"devDependencies": {

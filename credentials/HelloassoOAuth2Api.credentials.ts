@@ -5,7 +5,7 @@ export class HelloassoOAuth2Api implements ICredentialType {
 
 	extends = ['oAuth2Api'];
 
-	displayName = 'Helloasso OAuth2 API';
+	displayName = 'HelloAsso OAuth2 API';
 
 	icon = 'file:../../nodes/Helloasso/helloasso.svg' as IconFile;
 

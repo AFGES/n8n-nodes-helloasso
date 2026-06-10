@@ -4,9 +4,8 @@ import type { INodeProperties } from 'n8n-workflow';
  * Builds the standard `Limit` / `Return All` property pair for a list operation.
  *
  * HelloAsso v5 list endpoints page with `pageIndex`/`pageSize` and expose a
- * `continuationToken` in the response. Some endpoints (e.g.
- * `/partners/me/organizations`) never report a total count, so the
- * `continuationToken` is the only reliable cursor across all of them.
+ * `continuationToken` in the response. Some endpoints never report a total
+ * count, so `continuationToken` is the only reliable cursor across all of them.
  */
 export function paginationProperties(resource: string, operation: string): INodeProperties[] {
 	const show = { resource: [resource], operation: [operation] };

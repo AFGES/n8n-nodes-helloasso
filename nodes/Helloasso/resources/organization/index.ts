@@ -1,6 +1,5 @@
 import type { INodeProperties } from 'n8n-workflow';
 import { organizationSlugProperty } from '../shared/organizationSlug';
-import { paginationProperties } from '../shared/pagination';
 
 const showOnlyForOrganizations = {
 	resource: ['organization'],
@@ -26,24 +25,8 @@ export const organizationDescription: INodeProperties[] = [
 					},
 				},
 			},
-			{
-				name: 'Get Many',
-				value: 'getAll',
-				action: 'Get many organizations',
-				description: 'List organizations the authenticated partner can access',
-				routing: {
-					request: {
-						method: 'GET',
-						url: '/partners/me/organizations',
-					},
-					output: {
-						postReceive: [{ type: 'rootProperty', properties: { property: 'data' } }],
-					},
-				},
-			},
 		],
-		default: 'getAll',
+		default: 'get',
 	},
 	organizationSlugProperty('organization', ['get']),
-	...paginationProperties('organization', 'getAll'),
 ];

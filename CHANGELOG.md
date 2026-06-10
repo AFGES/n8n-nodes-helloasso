@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.5
+
+- Remove `HelloAsso Trigger` node — webhook management (`/v5/partners/me/api-notifications`) requires partner-level API access unavailable to standard users.
+- Remove organization `Get Many` operation — it used `/v5/partners/me/organizations`, also partner-only. Organization `Get` (by slug) is retained.
+
 ## 0.0.4
 
 - Add a **HelloAsso Trigger** node that auto-registers an n8n webhook URL with the
