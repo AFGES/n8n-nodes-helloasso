@@ -1,6 +1,6 @@
 {
 	"name": "@afges/n8n-nodes-helloasso",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A node for building integrations with the Helloasso API in n8n.",
 	"license": "MIT",
 	"homepage": "",
