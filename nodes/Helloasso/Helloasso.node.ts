@@ -10,7 +10,7 @@ export class Helloasso implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'HelloAsso',
 		name: 'helloasso',
-		icon: 'file:helloasso.svg',
+		icon: { light: 'file:helloasso.svg', dark: 'file:helloasso.svg' },
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
