@@ -20,7 +20,8 @@ export const checkoutIntentFields: INodeProperties[] = [
 		default: 0,
 		typeOptions: { minValue: 0 },
 		displayOptions: { show: { resource: ['checkoutIntent'], operation: ['create'] } },
-		description: 'Total amount in cents, taxes included (must equal the initial amount plus any terms)',
+		description:
+			'Total amount in cents, taxes included (must equal the initial amount plus any terms)',
 		routing: { send: { type: 'body', property: 'totalAmount' } },
 	},
 	{
@@ -99,7 +100,8 @@ export const checkoutIntentFields: INodeProperties[] = [
 				name: 'metadata',
 				type: 'json',
 				default: '{}',
-				description: 'Free-form JSON metadata returned on the checkout intent (max 20,000 characters)',
+				description:
+					'Free-form JSON metadata returned on the checkout intent (max 20,000 characters)',
 				routing: { send: { type: 'body', property: 'metadata' } },
 			},
 		],
