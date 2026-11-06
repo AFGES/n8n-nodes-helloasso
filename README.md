@@ -94,7 +94,7 @@ Les identifiants sont validés via un appel à `GET /v5/users/me/organizations`.
 
 ### Historique des versions
 
-Voir [CHANGELOG.md](CHANGELOG.md). Version actuelle : **0.0.5**.
+Voir [CHANGELOG.md](CHANGELOG.md).
 
 ### Licence
 
@@ -184,7 +184,7 @@ Credentials are validated with a call to `GET /v5/users/me/organizations`.
 
 ### Version history
 
-See [CHANGELOG.md](CHANGELOG.md). Current version: **0.0.5**.
+See [CHANGELOG.md](CHANGELOG.md).
 
 ### License
 
