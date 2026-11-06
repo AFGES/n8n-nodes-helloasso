@@ -90,7 +90,7 @@ Les identifiants sont validés via un appel à `GET /v5/users/me/organizations`.
 
 - [Documentation des nœuds communautaires n8n](https://docs.n8n.io/integrations/community-nodes/)
 - [Documentation de l'API HelloAsso](https://dev.helloasso.com/docs/getting-started)
-- [Dépôt GitHub](https://github.com/AFGES/n8n-nodes-helloasso)
+- [Dépôt](https://git.afges.eu/n8n/n8n-nodes-helloasso) (miroir [GitHub](https://github.com/AFGES/n8n-nodes-helloasso))
 
 ### Historique des versions
 
@@ -180,7 +180,7 @@ Credentials are validated with a call to `GET /v5/users/me/organizations`.
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 - [HelloAsso API documentation](https://dev.helloasso.com/docs/getting-started)
-- [GitHub repository](https://github.com/AFGES/n8n-nodes-helloasso)
+- [Repository](https://git.afges.eu/n8n/n8n-nodes-helloasso) ([GitHub](https://github.com/AFGES/n8n-nodes-helloasso) mirror)
 
 ### Version history
 
