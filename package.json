@@ -3,7 +3,7 @@
 	"version": "0.1.4",
 	"description": "A node for building integrations with the Helloasso API in n8n.",
 	"license": "MIT",
-	"homepage": "https://github.com/AFGES/n8n-nodes-helloasso",
+	"homepage": "https://github.com/AFGES/n8n-nodes-helloasso#readme",
 	"keywords": [
 		"n8n-community-node-package"
 	],
@@ -42,7 +42,7 @@
 	},
 	"devDependencies": {
 		"@n8n/node-cli": "^0.55.0",
-		"release-it": "^21.1.1",
+		"release-it": "^21.1.2",
 		"typescript": "6.0.3",
 		"vite-plus": "1.5.0"
 	},
